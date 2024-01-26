@@ -1,0 +1,28 @@
+.wrapper_footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer_element {
+    margin-top: 50px;
+    position: relative;
+}
+
+.footer_element:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: gray;
+    top: -32px;
+    right: 0;
+    left: 0;
+}
+
+.footer_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
