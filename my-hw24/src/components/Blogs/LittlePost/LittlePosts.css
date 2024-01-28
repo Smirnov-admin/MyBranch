@@ -1,0 +1,130 @@
+.wrapper_littlePost {
+    margin: 0 auto;
+    padding: 15px 20px;
+    width: 320px;
+}
+
+.littlePost_element {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.littlePost_content {
+    width: 200px;
+}
+
+.littlePost_date {
+    font-size: 16px;
+    text-align: left;
+    color: gray;
+}
+
+.littlePost_title {
+    text-align: left;
+    font-size: 14px;
+}
+
+.littlePost_icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.view_littleImage {
+    width: 100px;
+    height: 100px;
+}
+
+.littlePost_reaction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative
+}
+
+.littlePost_reaction:before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    background: #FFF;
+    bottom: -10px;
+}
+
+
+.reaction_element_list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.reaction_element_biLike {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.reaction_element_biLike svg {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.reaction_element_biLike svg:hover {
+    fill: green;
+}
+
+.count_like {
+    margin: 0;
+    font-size: 18px;
+}
+
+.reaction_element_disLike {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.reaction_element_disLike svg {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.reaction_element_disLike svg:hover {
+    fill: red;
+}
+
+.count_like {
+    margin: 0;
+    font-size: 18px;
+}
+
+.markandmore_element {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.bookmark_element svg {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.bookmark_element svg:hover {
+    fill: yellow;
+}
+
+.other_element svg {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.other_element svg:hover {
+    fill: yellow;
+}
+

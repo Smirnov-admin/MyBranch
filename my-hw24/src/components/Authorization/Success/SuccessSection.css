@@ -1,0 +1,55 @@
+.wrapper_success {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 15px;
+}
+
+.success_buttonBackHome {
+    border: none;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    width: 110px;
+    background-color: #FFF;
+    float: left;
+    cursor: pointer;
+}
+
+.success_title {
+    padding-top: 40px;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.success_authorization {
+    margin: 0 auto;
+    border: 2px solid #dcdcdc;
+    width: 600px;
+    text-align: left;
+    padding: 20px;
+    background-color: #f2f2f2;
+
+}
+
+.success_authorization_title {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.success_authorization_text {
+    font-size: 18px;
+}
+
+.success_authorazation_buttonGoHome {
+    margin-top: 20px;
+    padding: 10px 0;
+    width: 560px;
+    font-size: 20px;
+    background-color: #00008B;
+    font-weight: 700;
+    color: #FFF;
+    cursor: pointer;
+    border: none;
+}

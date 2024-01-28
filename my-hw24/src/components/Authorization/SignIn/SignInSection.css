@@ -1,0 +1,99 @@
+.wrapper_signIn {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 15px;
+}
+
+.signIn_authorization_form {
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    border: 2px solid #dcdcdc;
+    width: 600px;
+    background-color: #f2f2f2;
+}
+
+.signIn_buttonBackHome {
+    border: none;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    width: 110px;
+    background-color: #FFF;
+    float: left;
+    cursor: pointer;
+}
+
+.signIn_title {
+    padding-top: 40px;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.signIn_authorization_label_title {
+    text-align: left;
+}
+
+.signIn_authorization_label_title:nth-child(3) {
+    padding-top: 15px;
+}
+
+.signIn_authorization_form span {
+    color: red;
+}
+
+.signIn_authorization_input_text {
+    padding-left: 10px;
+    border: none;
+    height: 30px;
+}
+
+.signIn_buttonForgot {
+    padding-top: 5px;
+    border: none;
+    text-align: left;
+    font-size: 14px;
+    color: #A9A9A9;
+    font-weight: 700;
+    width: 130px;
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
+
+.signIn_authorazation_buttonSignIn {
+    margin-top: 20px;
+    padding: 10px 0;
+    width: 560px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #00008B;
+    color: #FFF;
+    cursor: pointer;
+    border: none;
+}
+
+.signIn_authorization_newAccount {
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.signIn_authorization_newAccount_text {
+    font-size: 14px;
+}
+
+.signIn_authorazation_buttonSignUp {
+    width: 70px;
+    color: #0000CD;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #f2f2f2;
+    border: none;
+    cursor: pointer;
+}

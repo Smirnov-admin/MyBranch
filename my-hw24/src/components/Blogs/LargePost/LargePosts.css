@@ -1,0 +1,136 @@
+.wrapper_largePost {
+    margin: 0 auto;
+    padding: 15px 20px;
+    width: 850px;
+}
+
+.largePost_element {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.largePost_content {
+    width: 500px;
+}
+
+.largePost_date {
+    font-size: 16px;
+    text-align: left;
+    color: gray;
+}
+
+.largePost_title {
+    width: 500px;
+    text-align: left;
+}
+
+.largePost_text {
+    overflow-wrap: break-word;
+    text-align: left;
+}
+
+.largePost_icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+
+}
+
+.view_largeImage {
+    width: 230px;
+    height: 230px;
+}
+
+.largePost_reaction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 20px;
+}
+
+.largePost_reaction:before {
+    position: absolute;
+    content: "";
+    width: 800px;
+    height: 1px;
+    background: #FFF;
+    bottom: -32px;
+}
+
+
+.reaction_element_list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.reaction_element_biLike {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.reaction_element_biLike svg {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.reaction_element_biLike svg:hover {
+    fill: green;
+}
+
+.count_like {
+    margin: 0;
+    font-size: 18px;
+}
+
+.reaction_element_disLike {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.reaction_element_disLike svg {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.reaction_element_disLike svg:hover {
+    fill: red;
+}
+
+.count_like {
+    margin: 0;
+    font-size: 18px;
+}
+
+.markandmore_element {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.bookmark_element svg {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.bookmark_element svg:hover {
+    fill: yellow;
+}
+
+.other_element svg {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.other_element svg:hover {
+    fill: yellow;
+}
+
