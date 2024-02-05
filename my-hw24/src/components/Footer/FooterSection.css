@@ -5,19 +5,9 @@
 }
 
 .footer_element {
-    margin-top: 50px;
-    position: relative;
-}
-
-.footer_element:before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 1px;
-    background: gray;
-    top: -32px;
-    right: 0;
-    left: 0;
+    margin: 25px 0;
+    border-top: 1px solid #000;
+    padding-top: 25px;
 }
 
 .footer_content {

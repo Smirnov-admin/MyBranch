@@ -1,7 +1,19 @@
+.wrapper_viewlistpost {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 .post_list {
     margin: 0 auto;
-    padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 30px;
+}
+
+.littlepost_list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }

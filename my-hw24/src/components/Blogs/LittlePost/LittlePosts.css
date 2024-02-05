@@ -1,74 +1,64 @@
-.wrapper_littlePost {
-    margin: 0 auto;
-    padding: 15px 20px;
-    width: 320px;
+.littlePost_card {
+    padding: 10px 0;
+    max-width: 352px;
 }
 
 .littlePost_element {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 5px;
+    gap: 34px;
 }
 
 .littlePost_content {
-    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
 }
 
 .littlePost_date {
+    width: 110px;
     font-size: 16px;
     text-align: left;
-    color: gray;
+    color: #8D8E97;
 }
 
 .littlePost_title {
+    padding-top: 8px;
+    max-width: 222px;
     text-align: left;
-    font-size: 14px;
+    color: #313037;
 }
 
-.littlePost_icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-}
-
-.view_littleImage {
-    width: 100px;
-    height: 100px;
+.littlePost_icon img {
+    width: 96px;
+    height: 96px;
 }
 
 .littlePost_reaction {
+    margin-top: 23px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: relative
+    border-bottom: 1px solid #DADADA;
+    padding-bottom: 10px;
 }
 
-.littlePost_reaction:before {
-    position: absolute;
-    content: "";
-    width: 320px;
-    height: 1px;
-    background: #FFF;
-    bottom: -10px;
-}
-
-
-.reaction_element_list {
+.reaction_element_littleList {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 5px;
 }
 
 .reaction_element_biLike {
     display: flex;
     flex-direction: row;
-    gap: 10px;
 }
 
 .reaction_element_biLike svg {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     cursor: pointer;
 }
 
@@ -77,19 +67,21 @@
 }
 
 .count_like {
-    margin: 0;
-    font-size: 18px;
+    padding-left: 10px;
+    text-align: left;
+    width: 50px;
+    font-size: 20px;
 }
 
 .reaction_element_disLike {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    cursor: pointer;
 }
 
 .reaction_element_disLike svg {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     cursor: pointer;
 }
 
@@ -97,34 +89,38 @@
     fill: red;
 }
 
-.count_like {
-    margin: 0;
-    font-size: 18px;
-}
-
 .markandmore_element {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    justify-content: space-between;
+    gap: 24px;
 }
 
 .bookmark_element svg {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     cursor: pointer;
 }
 
 .bookmark_element svg:hover {
-    fill: yellow;
+    fill: rgb(27, 3, 132);
 }
 
-.other_element svg {
-    width: 30px;
-    height: 30px;
+.other_element {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     cursor: pointer;
 }
 
-.other_element svg:hover {
-    fill: yellow;
+.other_element svg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
 }
 
+.other_element svg:hover {
+    fill: rgb(27, 3, 132);
+}

@@ -1,5 +1,5 @@
 .header {
-    background-color: #00008B;
+    background-color: #2231AA;
 }
 
 .header_elements {
@@ -16,7 +16,7 @@
 	z-index:2;
 	overflow: hidden;
     border-right: 1px solid #FFF;
-    background-color: #00008B;
+    background-color: #2231AA;
     border: none;
 	cursor: pointer;
 }

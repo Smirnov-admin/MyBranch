@@ -4,7 +4,8 @@ import { BiLike } from "react-icons/bi";
 import { BiDislike } from "react-icons/bi";
 import { PiBookmarkSimple } from "react-icons/pi";
 import { MdMoreHoriz } from "react-icons/md";
-import { PostCard } from "../interfacePosts";
+import { PostCard } from "../../../utils/interfacePosts";
+
 
 const LittlePost = ({date, title, image}: PostCard) => {
 
@@ -29,11 +30,11 @@ const LittlePost = ({date, title, image}: PostCard) => {
                         <h2 className="littlePost_title">{title}</h2>
                     </div>
                     <div className="littlePost_icon">
-                        <img src={image} alt="image" className="view_littleImage"/>
+                        <img src={image} alt="img" />
                     </div>
                 </div>
                 <div className="littlePost_reaction">
-                    <div className="reaction_element_list">
+                    <div className="reaction_element_littleList">
                         <div className="reaction_element_biLike">
                             <BiLike onClick={changeClickBiLike} />
                             <p className="count_like">{countBiLike}</p>
@@ -56,7 +57,6 @@ const LittlePost = ({date, title, image}: PostCard) => {
             </div>
         </div>
     )
-
 }
 
 export default LittlePost; 

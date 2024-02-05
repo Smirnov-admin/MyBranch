@@ -4,7 +4,7 @@ import { BiLike } from "react-icons/bi";
 import { BiDislike } from "react-icons/bi";
 import { PiBookmarkSimple } from "react-icons/pi";
 import { MdMoreHoriz } from "react-icons/md";
-import { PostCard } from "../interfacePosts";
+import { PostCard } from "../../../utils/interfacePosts";
 
 
 const MiddlePosts = ({date, title, image}: PostCard) => {
@@ -26,7 +26,7 @@ const MiddlePosts = ({date, title, image}: PostCard) => {
             <div className="middlPost_card">
                 <div className="middlePost_element">
                     <div className="middlePost_icon">
-                        <img src={image} alt="image" className="view_middleImage" />
+                        <img src={image} alt="img" />
                     </div>
                     <div className="middlePost_content">
                         <p className="middlePost_date">{date}</p>

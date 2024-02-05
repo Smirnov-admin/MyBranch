@@ -4,7 +4,8 @@ import { BiLike } from "react-icons/bi";
 import { BiDislike } from "react-icons/bi";
 import { PiBookmarkSimple } from "react-icons/pi";
 import { MdMoreHoriz } from "react-icons/md";
-import { PostCard } from "../interfacePosts";
+import { PostCard } from "../../../utils/interfacePosts";
+
 
 const LargePost = ({date, title, text, image}: PostCard) => {
 
@@ -30,7 +31,7 @@ const LargePost = ({date, title, text, image}: PostCard) => {
                         <p className="largePost_text">{text}</p>
                     </div>
                     <div className="largePost_icon">
-                        <img src={image} alt="image" className="view_largeImage"/>
+                        <img src={image} alt="img" />
                     </div>
                 </div>
                 <div className="largePost_reaction">
@@ -53,7 +54,6 @@ const LargePost = ({date, title, text, image}: PostCard) => {
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     )

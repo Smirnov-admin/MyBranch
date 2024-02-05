@@ -1,76 +1,59 @@
-.wrapper_middlePost {
-    margin: 0 auto;
-    padding: 15px 20px;
-    width: 400px;
+.middlPost_card {
+    padding: 10px 0;
+    max-width: 352px;
 }
 
 .middlePost_element {
-    padding: 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.middlePost_content {
-    width: 400px;
-}
-
-.middlePost_date {
-    font-size: 16px;
-    text-align: left;
-    color: gray;
-}
-
-.middlePost_title {
-    width: 350px;
-    text-align: left;
-    font-size: 16px;
-}
-
-.middlePost_icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-}
-
-.view_middleImage {
-    width: 360px;
+.middlePost_icon img {
+    width: 352px;
     height: 200px;
 }
 
+.middlePost_content {
+    margin-top: 10px;
+}
+
+.middlePost_date {
+    text-align: left;
+    font-size: 16px;
+    width: 110px;
+    color: #8D8E97;
+}
+
+.middlePost_title {
+    padding-top: 8px;
+    text-align: left;
+    max-width: 352px;
+    color: #313037;
+}
+
 .middlePost_reaction {
-    padding: 0 20px;
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: relative
+    border-bottom: 1px solid #DADADA;
 }
-
-.middlePost_reaction:before {
-    position: absolute;
-    content: "";
-    width: 360px;
-    height: 1px;
-    background: #FFF;
-    bottom: -10px;
-}
-
 
 .reaction_element_list {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 5px;
 }
 
 .reaction_element_biLike {
     display: flex;
     flex-direction: row;
-    gap: 10px;
 }
 
 .reaction_element_biLike svg {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     cursor: pointer;
 }
 
@@ -79,19 +62,21 @@
 }
 
 .count_like {
-    margin: 0;
-    font-size: 18px;
+    padding-left: 10px;
+    text-align: left;
+    width: 50px;
+    font-size: 20px;
 }
 
 .reaction_element_disLike {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    cursor: pointer;
 }
 
 .reaction_element_disLike svg {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     cursor: pointer;
 }
 
@@ -99,34 +84,38 @@
     fill: red;
 }
 
-.count_like {
-    margin: 0;
-    font-size: 18px;
-}
-
 .markandmore_element {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    justify-content: space-between;
+    gap: 24px;
 }
 
 .bookmark_element svg {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     cursor: pointer;
 }
 
 .bookmark_element svg:hover {
-    fill: yellow;
+    fill: rgb(27, 3, 132);
 }
 
-.other_element svg {
-    width: 30px;
-    height: 30px;
+.other_element {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     cursor: pointer;
 }
 
-.other_element svg:hover {
-    fill: yellow;
+.other_element svg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
 }
 
+.other_element svg:hover {
+    fill: rgb(27, 3, 132);
+}

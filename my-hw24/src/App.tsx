@@ -7,7 +7,11 @@ import FooterSection from './components/Footer/FooterSection';
 import SignInSection from './components/Authorization/SignIn/SignInSection';
 import SuccessSection from './components/Authorization/Success/SuccessSection';
 import ListPostCard from './components/Blogs/ListPostCard';
-import { PostCard } from './components/Blogs/interfacePosts';
+import { PostCard } from './utils/interfacePosts';
+import MiddlePosts from './components/Blogs/MiddlePost/MiddlePosts';
+import LargePost from './components/Blogs/LargePost/LargePosts';
+import LittlePost from './components/Blogs/LittlePost/LittlePosts';
+import ViewPost from './components/Blogs/ViewPost/ViewPost';
 
 function App() {
 
@@ -36,6 +40,13 @@ function App() {
       <SuccessSection />
       <h2>Blogs</h2>
       <ListPostCard date={postInfo.date}
+                    title={postInfo.title}
+                    text={postInfo.text}
+                    image={postInfo.image} />
+
+      <h2>ViewPost</h2>
+
+      <ViewPost  date={postInfo.date}
                     title={postInfo.title}
                     text={postInfo.text}
                     image={postInfo.image} />
