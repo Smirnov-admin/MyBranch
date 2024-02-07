@@ -11,9 +11,9 @@ const SignInSection = () => {
             <h2 className="signIn_title">Sign In</h2>
             <div className="signIn_authorization_form">
                 <label className="signIn_authorization_label_title">Email<span>*</span></label>
-                <input type="text" className="signIn_authorization_input_text" placeholder="Enter your email"/>
+                <input type="email" className="signIn_authorization_input_text" placeholder="Enter your email"/>
                 <label className="signIn_authorization_label_title">Password<span>*</span></label>
-                <input type="text" className="signIn_authorization_input_text" placeholder="Enter your password"/>
+                <input type="password" className="signIn_authorization_input_text" placeholder="Enter your password"/>
                 <button className="signIn_buttonForgot">Forgot password?</button>
                 <button className="signIn_authorazation_buttonSignIn">Sign In</button>
                 <div className="signIn_authorization_newAccount">

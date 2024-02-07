@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { PostCard } from "../../../utils/interfacePosts";
 import { BiDislike, BiLike } from "react-icons/bi";
 import { PiBookmarkSimple } from "react-icons/pi";
-import { MdMoreHoriz } from "react-icons/md";
 import "./ViewPost.css";
 
 const ViewPost = ({ date, title, text, image }: PostCard) => {
@@ -31,17 +30,24 @@ const ViewPost = ({ date, title, text, image }: PostCard) => {
             <div className="viewPost_reaction">
                 <div className="reaction_element_viewList">
                     <div className="reaction_element_biLike">
-                        <button className="btn_biLike" type="button" onClick={changeClickBiLike} > Like </button>
+                        <button className="btn_biLike" type="button" onClick={changeClickBiLike} > 
+                            <div className="btn_icon_element"> <BiLike /> </div>
+                        </button>
                         <p className="count_like">{countBiLike}</p>
                     </div>
                     <div className="reaction_element_disLike">
-                        <button className="btn_disLike" type="button" onClick={changeClickDisLike} > disLike </button>
+                        <button className="btn_disLike" type="button" onClick={changeClickDisLike} >
+                            <div className="btn_icon_element"> <BiDislike /> </div>
+                        </button>
                         <p className="count_like">{countDisLike}</p>
                     </div>
                 </div>
                 <div className="markandmore_element">
                     <div className="bookmark_element">
-                        <button className="btn_bookmark"> Add to favorites </button>
+                        <button className="btn_bookmark">
+                            <div className="btn_icon_element"> <PiBookmarkSimple /> </div>
+                            <p className="btn_icon_text">Add to favorites </p>
+                        </button>
                     </div>
                 </div>
             </div>

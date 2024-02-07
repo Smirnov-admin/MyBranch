@@ -53,13 +53,19 @@
     cursor: pointer;
 }
 
+.btn_icon_element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 13px ;
+}
+
 .btn_disLike {
     width: 50px;
     background-color: #E8E8E8;
     border: none;
     cursor: pointer;
 }
-
 
 .count_like {
     display: flex;
@@ -68,15 +74,25 @@
 }
 
 .btn_bookmark {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
     width: 200px;
     padding: 5px 0;
     background-color: #E8E8E8;
+    border-radius: 5px;
     border: none;
     cursor: pointer;
 }
 
 .btn_bookmark:focus {
     background-color: #5360CD;
+}
+
+.btn_icon_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .paggination_element_list {

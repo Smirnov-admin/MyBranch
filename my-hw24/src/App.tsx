@@ -15,7 +15,7 @@ import ViewPost from './components/Blogs/ViewPost/ViewPost';
 
 function App() {
 
-  const [postInfo, setPostInfo] = useState<PostCard>({
+  const [postInfo, setPostInfo] = useState<PostCard | null>({
     text: '',
     date: '',
     title: '',
@@ -38,18 +38,18 @@ function App() {
       <HeaderSection />
       <SignInSection />
       <SuccessSection />
-      <h2>Blogs</h2>
-      <ListPostCard date={postInfo.date}
-                    title={postInfo.title}
-                    text={postInfo.text}
-                    image={postInfo.image} />
+      <h2>Posts</h2>
+      {postInfo && < ListPostCard date={postInfo.date}
+                                  title={postInfo.title}
+                                  text={postInfo.text}
+                                  image={postInfo.image}/>}
 
       <h2>ViewPost</h2>
+      {postInfo && < ViewPost date={postInfo.date}
+                              title={postInfo.title}
+                              text={postInfo.text}
+                              image={postInfo.image}/>}
 
-      <ViewPost  date={postInfo.date}
-                    title={postInfo.title}
-                    text={postInfo.text}
-                    image={postInfo.image} />
       <FooterSection />
     </div>
   );
