@@ -36,11 +36,11 @@ const LittlePost = ({date, title, image}: PostCard) => {
                 <div className="littlePost_reaction">
                     <div className="reaction_element_littleList">
                         <div className="reaction_element_biLike">
-                            <BiLike onClick={changeClickBiLike} />
+                        <button className="btn_reaction" onClick={changeClickBiLike} > <BiLike /> </button>
                             <p className="count_like">{countBiLike}</p>
                         </div>
                         <div className="reaction_element_disLike">
-                            <BiDislike onClick={changeClickDisLike} />
+                        <button className="btn_reaction" onClick={changeClickDisLike} > <BiDislike /> </button>
                             <p className="count_like">{countDisLike}</p>
                         </div>
                     </div>

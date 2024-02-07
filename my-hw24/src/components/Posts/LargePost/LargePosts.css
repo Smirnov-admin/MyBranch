@@ -59,6 +59,11 @@
     padding-bottom: 40px;
 }
 
+.btn_reaction {
+    border: none;
+    background-color: #fff;
+}
+
 .reaction_element_biLike {
     display: flex;
     flex-direction: row;
@@ -69,6 +74,7 @@
     height: 25px;
     cursor: pointer;
 }
+
 
 .reaction_element_biLike svg:hover {
     fill: green;

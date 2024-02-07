@@ -3,15 +3,11 @@ import logo from './logo.svg';
 import './App.css';
 import HeaderSection from './components/Header/HeaderSection';
 import FooterSection from './components/Footer/FooterSection';
-// import FilterInSite from './components/FilterInSite/FilterInSite';
 import SignInSection from './components/Authorization/SignIn/SignInSection';
 import SuccessSection from './components/Authorization/Success/SuccessSection';
-import ListPostCard from './components/Blogs/ListPostCard';
+import ListPostCard from './components/Posts/ListPostCard';
 import { PostCard } from './utils/interfacePosts';
-import MiddlePosts from './components/Blogs/MiddlePost/MiddlePosts';
-import LargePost from './components/Blogs/LargePost/LargePosts';
-import LittlePost from './components/Blogs/LittlePost/LittlePosts';
-import ViewPost from './components/Blogs/ViewPost/ViewPost';
+import ViewPost from './components/Posts/ViewPost/ViewPost';
 
 function App() {
 

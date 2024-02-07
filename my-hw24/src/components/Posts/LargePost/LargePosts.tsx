@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './MiddlePosts.css'
+import './LargePosts.css'
 import { BiLike } from "react-icons/bi";
 import { BiDislike } from "react-icons/bi";
 import { PiBookmarkSimple } from "react-icons/pi";
@@ -7,7 +7,7 @@ import { MdMoreHoriz } from "react-icons/md";
 import { PostCard } from "../../../utils/interfacePosts";
 
 
-const MiddlePosts = ({date, title, image}: PostCard) => {
+const LargePost = ({date, title, text, image}: PostCard) => {
 
     const [countBiLike, setCountBiLike] = useState(0);
     const [countDisLike, setCountDisLike] = useState(0);
@@ -22,25 +22,26 @@ const MiddlePosts = ({date, title, image}: PostCard) => {
 
 
     return (
-        <div className="wrapper_middlePost">
-            <div className="middlPost_card">
-                <div className="middlePost_element">
-                    <div className="middlePost_icon">
+        <div className="wrapper_largePost">
+            <div className="largePost_card">
+                <div className="largePost_element">
+                    <div className="largePost_content">
+                        <p className="largePost_date">{date}</p>
+                        <h2 className="largePost_title">{title}</h2>
+                        <p className="largePost_text">{text}</p>
+                    </div>
+                    <div className="largePost_icon">
                         <img src={image} alt="img" />
                     </div>
-                    <div className="middlePost_content">
-                        <p className="middlePost_date">{date}</p>
-                        <h2 className="middlePost_title">{title}</h2>
-                    </div>
                 </div>
-                <div className="middlePost_reaction">
+                <div className="largePost_reaction">
                     <div className="reaction_element_list">
                         <div className="reaction_element_biLike">
-                            <BiLike onClick={changeClickBiLike} />
+                        <button className="btn_reaction" onClick={changeClickBiLike} > <BiLike /> </button>
                             <p className="count_like">{countBiLike}</p>
                         </div>
                         <div className="reaction_element_disLike">
-                            <BiDislike onClick={changeClickDisLike} />
+                            <button className="btn_reaction" onClick={changeClickDisLike} > <BiDislike /> </button>
                             <p className="count_like">{countDisLike}</p>
                         </div>
                     </div>
@@ -53,11 +54,10 @@ const MiddlePosts = ({date, title, image}: PostCard) => {
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     )
 
 }
 
-export default MiddlePosts; 
+export default LargePost; 
